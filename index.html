@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- SITE HEADER START -->
+
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-inner">
+          <a class="site-logo" href="index.html">
+            <img
+              class="site-logo-img"
+              src="images/site-logo.svg"
+              alt="Site logo"
+            />
+          </a>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="index.html" class="site-nav__link site-nav__link--active">HOME</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="index.html" class="site-nav__link">PORTFOLIO</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="index.html" class="site-nav__link">CONTACT ME</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger" type="button"></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SITE HEADER FINISH -->
+
+    <!-- SITE MAIN START -->
+
+    <main class="site-main">
+      <!-- HERO SECTION START -->
+
+      <div class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero-text-box">
+              <h1 class="hero__title">
+                Hey, I’m Alex Spencer and I love building beautiful websites
+              </h1>
+              <a href="#2" class="hero__link">ABOUT ME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SECTION START -->
+
+      <!-- ABOUT SECTION START -->
+
+      <section class="about" id="2">
+        <div class="container">
+          <div class="about-wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1000px)"
+                srcset="
+                  ./images/alex-desktop-webP.webp    1x,
+                  ./images/alex-desktop-webP@2x.webp 2x
+                "
+                width="540"
+                height="600"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/alex-tablet-webP.webp    1x,
+                  ./images/alex-tablet-webP@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/alex-mobile-webP.webp    1x,
+                  ./images/alex-mobile-webP@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1000px)"
+                srcset="
+                  ./images/alex-desktop.jpg    1x,
+                  ./images/alex-desktop@2x.jpg 2x
+                "
+                width="540"
+                height="600"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/alex-tablet.jpg    1x,
+                  ./images/alex-tablet@2x.jpg 2x
+                "
+                width="281"
+                height="600"
+              />
+              <img
+                class="about-img"
+                src="./images/alex-mobile.jpg"
+                srcset="
+                  ./images/alex-mobile.jpg    1x,
+                  ./images/alex-mobile@2x.jpg 2x
+                "
+                width="311"
+                height="474"
+                alt="A man look at left side"
+              />
+            </picture>
+            <div class="about-info">
+              <h2 class="about__title">About Me</h2>
+              <p class="about__text">
+                I’m a junior front-end developer looking for a new role in an
+                exciting company. I focus on writing accessible HTML, using
+                modern CSS practices and writing clean JavaScript. When writing
+                JavaScript code, I mostly use React, but I can adapt to whatever
+                tools are required. I’m based in London, UK, but I’m happy
+                working remotely and have experience in remote teams. When I’m
+                not coding, you’ll find me outdoors. I love being out in nature
+                whether that’s going for a walk, run or cycling. I’d love you to
+                check out my work.
+              </p>
+              <a class="about__link" href="#"> GO TO PORTFOLIO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE ARTICLE START -->
+
+    <article class="article">
+      <div class="container">
+        <div class="article-wrapper">
+          <h2 class="article__title">
+            Interested in doing a project together?
+          </h2>
+          <span class="article__border"></span>
+          <a class="article__link" href="#">CONTACT ME</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- SITE ARTICLE FINISH -->
+
+    <!-- SITE MAIN FINISH -->
+
+    <!-- SITE FOOTER START -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a class="footer-logo" href="index.html">
+            <img
+              class="footer-img"
+              src="images/footer-logo.svg"
+              alt="Footer logo"
+            />
+          </a>
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="index.html">HOME</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">PORTFOLIO</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">CONTACT ME</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#" class="social__link">
+              <img src="images/github.svg" alt="Github" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="images/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="images/linkedin.svg" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SITE FOOTER FINISH -->
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

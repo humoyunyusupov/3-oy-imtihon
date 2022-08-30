@@ -1,11 +1,10 @@
-var ElOpenBtn = document.querySelector(".site-header__burger");
-var ElCloseBtn = document.querySelector(".site-header-close");
-var siteNavbar = document.querySelector(".site-nav__wrapper");
+var ElOpenBtn = document.querySelector(".burger");
+var siteNavbar = document.querySelector(".site-nav");
+
 
 ElOpenBtn.addEventListener("click", function () {
-  siteNavbar.classList.add("shownav");
+  siteNavbar.classList.toggle("shownav");
+  ElOpenBtn.classList.toggle("close-burger");
 });
-ElCloseBtn.addEventListener("click", function () {
-  siteNavbar.classList.remove("shownav");
-});
+
 

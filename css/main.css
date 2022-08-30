@@ -388,6 +388,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Public Sans", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -769,6 +770,85 @@ a {
     width: 400px;
   }
 }
+.touch {
+  padding-bottom: 48px;
+}
+
+.touch-wrapper {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(51, 50, 61, 0.2196078431);
+}
+
+.touch__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #33323D;
+}
+
+.touch__text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 1000px) {
+  .touch-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .touch-info-box {
+    width: 635px;
+  }
+}
+.contact {
+  padding-bottom: 48px;
+}
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #33323D;
+}
+
+.contact-wrapper {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(51, 50, 61, 0.2196078431);
+}
+
 .site-footer {
   padding: 56px 0px;
   background-color: #33323D;

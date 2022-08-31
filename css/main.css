@@ -849,6 +849,125 @@ a {
   border-top: 1px solid rgba(51, 50, 61, 0.2196078431);
 }
 
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name-label {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+}
+
+.email-label {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+}
+
+.name-input {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #E6E6E7;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.name-input:focus {
+  border: 2px solid #5FB4A2;
+}
+
+.name-input:invalid {
+  border: 2px solid #F43030;
+}
+
+.name-input:-moz-placeholder-shown {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.name-input:-ms-input-placeholder {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.name-input:placeholder-shown {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.text-area {
+  margin-top: 17px;
+  padding: 16px;
+  background-color: #E6E6E7;
+  border: 2px solid transparent;
+  outline: none;
+  resize: none;
+}
+
+.text-area:focus {
+  border: 2px solid #5FB4A2;
+}
+
+.text-area:-moz-placeholder-shown {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.text-area:-ms-input-placeholder {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.text-area:placeholder-shown {
+  color: #33323D;
+  opacity: 0.4;
+}
+
+.contact__link {
+  max-width: 200px;
+  margin-top: 24px;
+  padding: 17px 24px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background-color: #203A4C;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+  border: none;
+}
+.contact__link:hover {
+  background-color: #5FB4A2;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact__form {
+    width: 635px;
+  }
+  .contact-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .site-footer {
   padding: 56px 0px;
   background-color: #33323D;
